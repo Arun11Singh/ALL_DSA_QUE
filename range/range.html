@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+     <h1>Vote your Language!</h1>
+     <div class="main_container">
+     <div class="container">            
+         
+            
+            <h2 id="counting"></h2>
+            <h2 class="lenguage">php</h2>
+            <div class="btn">
+                <button onclick="increment()">click here</button> 
+            </div>   
+        </div>
+        <div class="container">            
+           
+              
+              <h2 id="countings"></h2>
+              <h2 class="lenguage">Python</h2>
+              <div class="btn">
+                  <button onclick="increments()">click Here</button> 
+              </div>   
+          </div>
+          <div class="container">            
+           
+              
+              <h2 id="countingr"></h2>
+              <h2 class="lenguage">React</h2>
+              <div class="btn">
+                  <button onclick="incrementr()">click Here</button> 
+              </div>   
+          </div>
+          <div class="container">            
+          
+              
+              <h2 id="countingj"></h2>
+              <h2 class="lenguage">java</h2>
+              <div class="btn">
+                  <button onclick="incrementj()">click Here</button> 
+              </div>   
+          </div>
+        </div>
+         
+     <script>
+       var data =0;
+       var data_s =0;
+       var data_r =0;
+       var data_j =0;
+  
+ 
+  document.getElementById("counting").innerText = data;
+  document.getElementById("countings").innerText = data_s;
+  document.getElementById("countingr").innerText = data_r;
+  document.getElementById("countingj").innerText = data_j;
+
+    
+  
+  function increment() {
+      data = data + 1;
+      document.getElementById("counting").innerText = data;
+  }
+  function increments() {
+      data_s = data_s + 1;
+      document.getElementById("countings").innerText = data_s;
+  }
+  function incrementr() {
+      data_r = data_r + 1;
+      document.getElementById("countingr").innerText = data_r;
+  }
+  function incrementj() {
+      data_j = data_j + 1;
+      document.getElementById("countingj").innerText = data_j;
+  }
+ 
+
+  
+  
+     </script>
+</body>
+</html>
